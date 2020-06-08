@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +7,7 @@
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 </head>
 
 <body>
@@ -29,13 +29,33 @@
                 <div class="heading">
                     <h2>Black Desert</h2>
                 </div>
-                
-                <div class="image" id="project-innerImg" style="background-image:url(&quot;../assets/img/project/pearlabyss.jpg&quot;)"></div>
+                <div class="image">
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="../assets/img/project/DoubleI/2040575338_qmvF32rD_49f76c1e80ec19ec88334249932bb067b9682627.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/img/project/DoubleI/thumb-2040575338_19gucD4k_f6a2080a957a3b2c29112343bd1d40b6e48b0c74_600x406.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/img/project/DoubleI/thumb-2040575338_mI80dqGv_1c91d8d9f1fc6e8b075f9235586efbe4def64716_600x450.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/img/project/DoubleI/thumb-2040575338_MUchKwe2_b2aa4cce0e2d9c926dd553e0dc36a6ec7c429649_600x417.jpg" alt=""></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination" id="swiper-fragment"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev" id="swiper-fragment"></div>
+                        <div class="swiper-button-next" id="swiper-fragment"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar" id="swiper-fragment"></div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-12 col-md-6 offset-md-1 info">
                         <h3>Description</h3>
-                        <p>설명설설명</p>
-                        <p>설설명명설명설설</p>
+                        <p>Nam a ultrices mauris. Nam efficitur, lorem a vehicula interdum, ligula velit euismod lorem, vitae vehicula ligula tortor eu leo. Maecenas porttitor massa ut vestibulum euismod. Aliquam eget mi aliquam.</p>
+                        <p>Lorem ipsum dapibus dolor non, malesuada mauris. Aliquam eleifend mauris non odio mattis auctor. Aenean sit amet elementum tellus, a facilisis ligula. Pellentesque ac vehicula mauris.</p>
                     </div>
                     <div class="col-12 col-md-3 offset-md-1 meta">
                         <div class="tags">
@@ -101,6 +121,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script>
+        $(document).ready(function(){
+            var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+            el: '.swiper-scrollbar',
+            },
+        });
+
+        // $('.swiper-container').mouseenter(function(){
+        //     // console.log('aaa')
+        //     $("#swiper-fragment").fadeOut(1000);
+        // },function(){
+        //     $("#swiper-fragment").fadeOut(1000);
+        // });
+        });
+        </script>
 </body>
 
 </html>

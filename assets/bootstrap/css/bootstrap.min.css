@@ -18,4 +18,14 @@
  .project-tagimg{width:100%; height:100%;}
  #project-innerImg{background-position: center center;}
  .tag-info{margin-bottom: 3px;}
+
+
+ /* 
+   Swiper 미세조성
+ */
+ .swiper-container{width: 80%; height: 100%;}
+ .swiper-slide{width: 100%; height: 100%; text-align: center;}
+ .swiper-slide img{height: 100%; cursor:pointer;}
+ 
+ /* #swiper-fragment{display: none;} */
  
