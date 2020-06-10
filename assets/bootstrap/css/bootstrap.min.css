@@ -26,6 +26,7 @@
  .swiper-container{width: 80%; height: 100%;}
  .swiper-slide{width: 100%; height: 100%; text-align: center;}
  .swiper-slide img{height: 100%; cursor:pointer;}
+ .swiper-slide iframe{width: 100%; height: 100%;}
  
  /* #swiper-fragment{display: none;} */
  
