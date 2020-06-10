@@ -15,6 +15,7 @@
  /* 
     customed - 20.06.08
  */
+
  .project-tagimg{width:100%; height:100%;}
  #project-innerImg{background-position: center center;}
  .tag-info{margin-bottom: 3px;}
@@ -25,8 +26,15 @@
  */
  .swiper-container{width: 80%; height: 100%;}
  .swiper-slide{width: 100%; height: 100%; text-align: center;}
- .swiper-slide img{height: 100%; cursor:pointer;}
+ .swiper-slide img{height: 100%; cursor:pointer; }
  .swiper-slide iframe{width: 100%; height: 100%;}
  
- /* #swiper-fragment{display: none;} */
+
+ /* 
+    팝업
+ */
+ .pop-wrapper{position: absolute; display:none;justify-content: center;align-items: center;top:0%;width:100%;height:100%;z-index: 9999;background-color:rgba(0,0,0,.5);}
+ .pop-picture{position: relative;display:flex;justify-content: center;align-items: center; top:100px;}
+ .pic{width: 1000px;}
+ .pop-x{display:none;}
  

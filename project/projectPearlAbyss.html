@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
 </head>
-
-<body>
+    <div class="pop-wrapper">
+        <div class="pop-picture">
+            <img class="pic" src="#" alt="">
+        </div>
+    </div>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
         <div class="container"><a class="navbar-brand logo" href="../index.html">JinDev</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
@@ -23,9 +26,11 @@
             </div>
         </div>
     </nav>
+    <body>
     <main class="page project-page">
         <section class="portfolio-block project">
             <div class="container">
+                <!-- 이미지 크게 보기 창 -->
                 <div class="heading">
                     <h2>Black Desert</h2>
                 </div>
@@ -35,7 +40,7 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide"><img src="../assets/img/project/pearlabyss/pearlabyss.jpg" alt=""></div>
+                            <div class="swiper-slide"><img class="swiper-img" src="../assets/img/project/pearlabyss/pearlabyss.jpg" alt=""></div>
                             <div class="swiper-slide">
                                 <iframe src="https://www.youtube.com/embed/YVfsz6DRnwU" frameborder="" allowfullscreen=""></iframe>
                             </div>
@@ -125,38 +130,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/script.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script>
-        $(document).ready(function(){
-            var mySwiper = new Swiper ('.swiper-container', {
-            // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
-            // If we need pagination
-            pagination: {
-            el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            },
-
-            // And if we need scrollbar
-            scrollbar: {
-            el: '.swiper-scrollbar',
-            },
-        });
-
-        // $('.swiper-container').mouseenter(function(){
-        //     // console.log('aaa')
-        //     $("#swiper-fragment").fadeOut(1000);
-        // },function(){
-        //     $("#swiper-fragment").fadeOut(1000);
-        // });
-        });
-        </script>
 </body>
 
 </html>
