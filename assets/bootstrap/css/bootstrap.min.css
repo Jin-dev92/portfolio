@@ -37,4 +37,8 @@
  .pop-picture{position: relative;display:flex;justify-content: center;align-items: center; top:100px;}
  .pic{width: 1000px;}
  .pop-x{display:none;}
+/* 
+   시간 표기
+*/
+ .time{font-size : 25px;}
  
